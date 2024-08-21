@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+        body { font: 12pt Arial; }
+        h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+        button, input { font-size: 12pt; padding: 20px; }
+        button{
+            width: 150px;
+            cursor: pointer;
+        }
+        #section2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra o número!</h1>
+    
+    <div>
+        <input type="hidden" id="numero" placeholder="Número a ser adivinhado">
+        <button id="definir">Gerar Número</button>  
+    </div>
+
+    <br>
+
+    <div id="section2">
+        <input type="number" id="tentativa" placeholder="Adivinhe o número">
+        <button id="adivinhar">Tentar</button>
+        <p id="intervalo" style="line-height: 0px;"></p>
+    </div>
+
+    <hr>
+    <h2>Suas tentativas: <span id="nTentativas"></span></h2>
+    
+    <div id="resultado">
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
